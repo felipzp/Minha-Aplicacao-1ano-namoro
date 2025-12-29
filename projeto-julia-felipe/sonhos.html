@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nossos Sonhos e Metas</title>
+  <link rel="stylesheet" href="sonhos.css">
+</head>
+<body>
+  <section class="pagina-sonhos">
+<h1 id="topo" class="titulo-sonhos">Nossos principais sonhos e metas</h1>
+
+    <div class="bloco-sonho fade">
+      <div class="imagem-container">
+        <img src="assets/casa.jpg" alt="Casa dos sonhos" loading="lazy" />
+      </div>
+      <div class="texto-container">
+        <h2>Ter nossa casa dos sonhos</h2>
+        <p>Ter um lar com a nossa cara, cheio de amor, conforto e boas memórias para nossa família.</p>
+      </div>
+    </div>
+
+    <div class="bloco-sonho fade">
+      <div class="imagem-container">
+        <img src="assets/filhos.png" alt="Filhos" loading="lazy" />
+      </div>
+      <div class="texto-container">
+        <h2>Ter Filhos</h2>
+        <p>Construir uma família e viver juntos todas as fases da vida criando e vivenciando momentos inesquecíveis.</p>
+      </div>
+    </div>
+
+    <div class="bloco-sonho fade">
+      <div class="imagem-container">
+        <img src="assets/casamento.png" alt="Casamento" loading="lazy" />
+      </div>
+      <div class="texto-container">
+        <h2>Nosso casamento</h2>
+        <p>Celebrar nossa união com uma cerimônia especial, rodeados de quem amamos marcando esse dia eternamente na nossa historia.</p>
+      </div>
+    </div>
+
+    <div class="bloco-sonho fade">
+      <div class="imagem-container">
+        <img src="assets/spitz.png" alt="Cachorro" loading="lazy" />
+      </div>
+      <div class="texto-container">
+        <h2>Ter um cachorro</h2>
+        <p>Adotar ou comprar um companheiro peludo para completar nossa família e trazer ainda mais alegria com sua fofura, energia e companhia</p>
+      </div>
+    </div>
+
+    <div class="bloco-sonho fade">
+      <div class="imagem-container">
+        <img src="assets/carro.png" alt="Motorhome" loading="lazy" />
+      </div>
+      <div class="texto-container">
+        <h2>Ter nosso carro</h2>
+        <p>Explorar o mundo com liberdade, colecionando paisagens e histórias em cada parada com nossa grandiosa conquista.</p>
+      </div>
+    </div>
+     <div class="botoes-finais">
+  <a href="index.html" class="botao botao-rosa">Voltar para o início</a>
+  <a href="nossaHistoria.html" class="botao botao-azul">Voltar para a nossa história</a>
+</div>
+
+
+  </section>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('apareceu');
+        }
+      });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.bloco-sonho').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
