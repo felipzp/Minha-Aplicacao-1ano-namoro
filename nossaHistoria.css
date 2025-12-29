@@ -202,3 +202,66 @@ button:active {
   background: #fff;
   color: #ff4f81;
 }
+
+
+/* --- RESPONSIVIDADE HISTÓRIA CORRIGIDA --- */
+@media (max-width: 600px) {
+    html, body {
+        overflow-y: auto; 
+    }
+
+    .titulo-historia {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .quadrado {
+        width: 92%;
+        margin: 0 auto;
+        height: auto; 
+        min-height: 450px;
+        padding: 1.5rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .conteudo-texto {
+        padding: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .conteudo-texto h3 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .conteudo-texto p {
+        font-size: 0.9rem;
+        text-align: justify; 
+        line-height: 1.5;
+    }
+
+    .botoes-navegacao {
+        flex-direction: column; 
+        gap: 12px;
+        margin-top: 15px;
+    }
+
+    .botao-azul, .botao-rosa {
+        width: 100%;
+        text-align: center;
+        font-size: 0.95rem;
+        padding: 0.8rem;
+    }
+
+    .controles {
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .canto {
+        font-size: 0.9rem;
+    }
+}
